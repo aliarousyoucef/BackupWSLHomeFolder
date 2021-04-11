@@ -1,11 +1,11 @@
 
 # Updated by Youssouf ALI AROUS: ALIAROUS.PRO
-# Ignore List  source Ruben Barkow-Kuder <https://github.com/rubo77/rsync-homedir-excludes>
+# Ignore list source: Ruben Barkow-Kuder <https://github.com/rubo77/rsync-homedir-excludes>
 
 # Please Set password for zip archive
 password="password"
 
-#Variables 
+# Variables 
 TIME_STRING=$(date +"%Y_%m_%d_%I_%M")
 
 
@@ -422,8 +422,10 @@ go/pkg/mod/cache
 
 # rsync home folder to temp folder
 rsync -aP --exclude-from=ignorelist /home/$USER/ /tmp/wsl_backup$TIME_STRING
+
 # Encrypt folder with AES256
 7za a -tzip -p$password  -mem=AES256 -r /tmp/wsl_backup$TIME_STRING.zip /tmp/wsl_backup$TIME_STRING 
+
 # Delete temp folder
 rm -rf /tmp/wsl_backup$TIME_STRING
 rm ignorelist
