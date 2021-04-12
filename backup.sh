@@ -2,8 +2,12 @@
 # Updated by Youssouf ALI AROUS: ALIAROUS.PRO
 # Ignore list source: Ruben Barkow-Kuder <https://github.com/rubo77/rsync-homedir-excludes>
 
-# Please Set password for zip archive
+# 1 - Please Set password for zip archive
 password="password"
+# 2 - Please install p7zip
+sudo apt install p7zip-full
+# 3 - update custom ignore list in the end of the script
+
 
 # Variables 
 TIME_STRING=$(date +"%Y_%m_%d_%I_%M")
@@ -402,7 +406,7 @@ go/pkg/mod/cache
 .ICAClient/.tmp
 .ICAClient/cache/zlcache
 ###############################################
-# Custom     
+# Custom  ignore list   
 #                                           #
 ###############################################
 #.terraform
