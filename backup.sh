@@ -1,5 +1,5 @@
 
-# Updated by Youssouf ALI AROUS: ALIAROUS.PRO
+# Updated by Youssouf ALI AROUS
 # Ignore list source: Ruben Barkow-Kuder <https://github.com/rubo77/rsync-homedir-excludes>
 
 # 1 - Please Set password for zip archive
