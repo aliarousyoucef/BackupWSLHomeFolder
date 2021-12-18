@@ -437,3 +437,6 @@ rm ignorelist
 
 # To acces WSL Windows home folder on Windows
 # %LOCALAPPDATA%\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs
+
+# unzip
+# 7z x wsl_backup2021_11_29_12_54.zip -ppassword
