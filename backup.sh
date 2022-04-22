@@ -23,30 +23,30 @@ echo """# rsync-homedir-excludes
 # (uncomment the files you don't need)        #
 ###############################################
 
-#.android
-#.AndroidStudio*/
-#Android/Sdk
-#.gradle
-#.gvm
-#.grails/
-#.grails_history
-#.kde/share/apps/nepomuk
-#.local/share/notbit
-#.local/libvirt
-#.local/share/libvirt
-#.vagrant
-#.vagrant.d
-#.wine
-#.twister
-#/twister
-#Applications/eclipse*
-#/Downloads
-#*Popcorntime*
-#/.aMule
-#/Scribus
-#/VirtualBox*
-#/Nextcloud
-#_build
+.android
+.AndroidStudio*/
+Android/Sdk
+.gradle
+.gvm
+.grails/
+.grails_history
+.kde/share/apps/nepomuk
+.local/share/notbit
+.local/libvirt
+.local/share/libvirt
+.vagrant
+.vagrant.d
+.wine
+.twister
+/twister
+Applications/eclipse*
+/Downloads
+*Popcorntime*
+/.aMule
+/Scribus
+/VirtualBox*
+/Nextcloud
+_build
 #
 ## Ruby gems
 #.rvm
@@ -409,16 +409,20 @@ go/pkg/mod/cache
 # Custom  ignore list   
 #                                           #
 ###############################################
-#.terraform
-#.akamai-cli
-#.local*
-#.vscode-server*
-#node_modules
-#.aws
-#.git
-#go
-#ios/build*
-#.expo
+.terraform
+.akamai-cli
+.local*
+.vscode-server*
+node_modules*
+.aws
+.git
+go
+ios/build*
+.expo
+.config
+.minikube
+Android*
+
 
 """> ignorelist
 
